@@ -79,6 +79,20 @@ div.box.swipe {
   -webkit-border-radius: 3px 0 0 3px;
   border-radius: 3px 0 0 3px;
 }
+.prev{
+  width: 12px;
+  position: absolute;
+  height: 20px;
+  top: 200px;
+  left: 1px;
+}
+.next{
+  width: 12px;
+  position: absolute;
+  height: 20px;
+  top: 200px;
+  right: 1px;
+}
 
 .ui-header {
   z-index: 1006;
