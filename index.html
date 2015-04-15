@@ -23,6 +23,7 @@
 <!--첫번째 메인 페이지 -->
 <div data-role="page" id="main">
   <div data-role="header" data-position="fixed">
+    <a href="#panel1" class="ui-btn-left">리스트</a>
     <h1 class="text-header"> 한철수 <b style="color:red">❤</b> 김영희 의 결혼식</h1>
   </div>
   <div data-role="content">
@@ -86,6 +87,15 @@
 
   <div data-role="footer" data-position="fixed">
     <h1> xxxx년 xx월 xx일 행복한 웨딩홀 xx시 </h1>
+  </div>
+  <div data-role="panel" data-display="push" id="panel1">
+    <ul data-role="listview">
+      <li><a href="#propose">프로포즈</a></li>
+      <li><a href="#page1">사진첩</a></li>
+      <li><a href="#location">오시는길(예식장)</a></li>
+      <li><a href="#location2">오시는길(피로연)</a></li>
+      <li><a href="#panel1" data-rel="close">Close</a></li>
+    </ul>
   </div>
 </div>
 <!--첫번재 메인 페이지 끝-->
