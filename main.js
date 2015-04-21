@@ -60,21 +60,22 @@ $( document ).on( "pagechange",  function(){
   var $slider = $( "#slider" ),
       $prev = $( "#prevButton" ),
       $next = $( "#nextButton" );
-
+  /*
   $slider.off( "swipeleft" ).on( "swipeleft", function(e) {
     e.preventDefault();
     var index = mySwipe.getPos();
-    console.log("left: " + index );
+    console.log( "left: " + index );
     mySwipe.slide( index, 500 );
     e.stopPropagation();
   });
   $slider.off( "swiperight" ).on( "swiperight", function(e) {
     e.preventDefault();
     var index = mySwipe.getPos();
-    console.log("right: " + index );
+    console.log( "right: " + index );
     mySwipe.slide( index, 500 );
     e.stopPropagation();
   });
+  */
   $prev.off( "click" ).on( "click", function(){
     mySwipe.prev();
   });
