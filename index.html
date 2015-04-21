@@ -27,7 +27,7 @@
   </div>
   <div data-role="content">
     <div>
-      <img  class="main-img" src="img/main.png">
+      <img class="main-img" src="img/main.png">
     </div>
     <a href="#notice" data-rel="popup" class="ui-btn ui-corner-all ui-shadow" data-transition="pop" data-theme="c">공지 사항</a>
     <ul data-role="listview" data-inset="true">
@@ -40,17 +40,18 @@
       </li>
       <li data-role="list-divider">신랑 신부 가족 & 이름 </li>
       <li>
-          <p>신랑 아버지와 어머니 성함  </p>
+          <p>신랑 아버지와 어머니 성함 </p>
           <p>의 차남 한철수 </p>
       </li>
       <li>
-          <p>신부 아버지와 어머니 성함  </p>
+          <p>신부 아버지와 어머니 성함</p>
           <p>의 차녀 김영희 </p>
       </li>
     <li data-role="list-divider">프로포즈</li>
     <li><a href="#propose">프로포즈</a></li>
-    <!--<li data-role="list-divider">사진첩</li>-->
+    <li data-role="list-divider">사진첩</li>
     <li><a href="#page1">사진첩</a></li>
+    <li><a href="#page2">사진첩(슬라이드없이)</a></li>
     <li data-role="list-divider">오시는길</li>
     <li>
       <a href="#location" >
@@ -101,6 +102,7 @@
     <ul data-role="listview">
       <li><a href="#propose">프로포즈</a></li>
       <li><a href="#page1">사진첩</a></li>
+      <li><a href="#page2">사진첩(슬라이드없이)</a></li>
       <li><a href="#location">오시는길(예식장)</a></li>
       <li><a href="#location2">오시는길(피로연)</a></li>
       <li><a href="#panel1" data-rel="close">Close</a></li>
@@ -108,8 +110,6 @@
   </div>
 </div>
 <!--첫번재 메인 페이지 끝-->
-
-
 
 <!--두번째 사진 페이지 -->
 <div data-role="page" id="page1">
@@ -128,14 +128,40 @@
         <div><img style="width: 100%;" src="./img/sixth.png"></div>
       </div>
     </div>
-    <span class="nav prev" id="prevButton"></span>
-    <span class="nav next" id="nextButton"></span>
   </div>
-
+  <fieldset class="ui-grid-a">
+    <div class="ui-block-a"><input type="button" id="prevButton" value="Prev" data-theme="a"></div>
+    <div class="ui-block-b"><input type="button" id="nextButton" value="Next" data-theme="b"></div>
+  </fieldset>
   <div data-role="footer" data-position="fixed">
     <h1> xxxx년 xx월 xx일 행복한 웨딩홀 xx시 </h1>
   </div>
 </div>
+
+<!--세번째 사진 페이지 -->
+<div data-role="page" id="page2">
+  <!--<div class="box"></div>-->
+  <div data-role="header" data-position="fixed" data-add-back-btn="true" >
+    <h1> 사진첩(슬라이드 없이) </h1>
+  </div>
+  <div data-role="content">
+    <div>
+      <div>
+        <div><img style="width: 100%;" src="./img/first.png"></div>
+        <div><img style="width: 100%;" src="./img/second.png"></div>
+        <div><img style="width: 100%;" src="./img/third.png"></div>
+        <div><img style="width: 100%;" src="./img/fourth.png"></div>
+        <div><img style="width: 100%;" src="./img/fifth.png"></div>
+        <div><img style="width: 100%;" src="./img/sixth.png"></div>
+      </div>
+    </div>
+  </div>
+  <div data-role="footer" data-position="fixed">
+    <h1> xxxx년 xx월 xx일 행복한 웨딩홀 xx시 </h1>
+  </div>
+</div>
+
+
 
 <div data-role="page" id="propose">
   <div data-role="header" data-position="fixed" data-add-back-btn="true">
