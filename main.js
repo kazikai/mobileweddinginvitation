@@ -98,7 +98,7 @@ $( document ).on( "pagechange",  function(){
     container: '#kakao-link',
     label: '저희의 결혼을 축하해주세요',
     image: {
-      src: 'img/main.png',
+      src: 'http://dev.kazikai.net/invitation/img/main.png',
       width: '300',
       height: '200'
     },
