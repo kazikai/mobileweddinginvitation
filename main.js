@@ -98,7 +98,7 @@ $( document ).on( "pagechange",  function(){
     container: '#kakao-link',
     label: '저희의 결혼을 축하해주세요',
     image: {
-      src: 'http://dn.api1.kage.kakao.co.kr/14/dn/btqaWmFftyx/tBbQPH764Maw2R6IBhXd6K/o.jpg',
+      src: 'img/main.png',
       width: '300',
       height: '200'
     },
