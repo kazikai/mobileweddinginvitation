@@ -19,7 +19,7 @@ var initLocation = function() {
   map.setCenter( lonlat, 16 );
   var size = new Tmap.Size(30,30);
   var offset = new Tmap.Pixel(-(size.w/2), -(size.h/2));
-  var icon = new Tmap.Icon('img/ico_spot.png', size, offset);
+  var icon = new Tmap.Icon('img/heart.png', size, offset);
   var marker = new Tmap.Marker(lonlat, icon);
   markerLayer.addMarker(marker);
 };
@@ -37,7 +37,7 @@ var initBanquet = function( ){
   map.setCenter( center, 16 );
   var size = new Tmap.Size(30,30);
   var offset = new Tmap.Pixel(-(size.w/2), -(size.h/2));
-  var icon = new Tmap.Icon('http://map.nate.com/img/contents/ico_spot.png', size, offset);
+  var icon = new Tmap.Icon('./img/marker.png', size, offset);
   var marker = new Tmap.Marker(lonlat, icon);
 
 markerLayer.addMarker(marker);
