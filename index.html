@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
 <div id="fb-root"></div>
 <script>
   window.fbAsyncInit = function() {
@@ -87,13 +86,10 @@
       <p>주차장은 웨딩홀 옆에 있으니 </p>
       <p>주차요원의 안내에 따라<b style="color:blue">부탁드립니다.</b></p>
     </li>
-    <li><a href="#hsh">방명록</a></li>
-    <!--<li><a href="#lhy">신부 방명록</a></li>-->
     </ul>
-
-      <div class="ui-body ui-body-a ui-corner-all">
-        <div class="fb-like" data-share="true" data-width="450" data-show-faces="true"></div>
-      </div>
+    <div class="ui-body ui-body-a ui-corner-all" style="overflow:visible;">
+      <div class="fb-like" data-share="true" data-width="450" data-show-faces="true"></div>
+    </div>
   </div>
   <div data-role="footer" data-position="fixed">
     <h1> xxxx년 xx월 xx일 행복한 웨딩홀 xx시 </h1>
@@ -119,7 +115,7 @@
       <li><a href="#page2">사진첩(슬라이드없이)</a></li>
       <li><a href="#location">오시는길(예식장)</a></li>
       <li><a href="#location2">오시는길(피로연)</a></li>
-      <li><a href="#panel1" data-rel="close">Close</a></li>
+      <li><a href="#panel1" data-rel="close" data-icon="delete">Close</a></li>
     </ul>
   </div>
 </div>
@@ -195,22 +191,8 @@
     <h1> xxxx년 xx월 xx일 행복한 웨딩홀 xx시 </h1>
   </div>
 </div>
+<!--프로포즈 페이지 끝 -->
 
-<!--두번째 사진 페이지 끝 -->
-
-<div data-role="page" id="hsh">
-  <div data-role="header" data-position="fixed" data-add-back-btn="true">
-    <h1> 신랑신부에게 </h1>
-  </div>
-  <div data-role="content">
-  <div>
-      <p>페이스북 아이디로 로그인 해서 방명록을 남기실수있습니다.</p>
-      <p>프로필에 게시하기를 체크 하시면, 로그인하신 페이스북 아이디로 포스팅이 됩니다.</p>
-  </div>
-  <div data-role="footer" data-position="fixed">
-    <h1> xxxx년 xx월 xx일 행복한 웨딩홀 xx시 </h1>
-  </div>
-</div>
 <div data-role="page" id="location">
   <div data-role="header" data-position="fixed" data-add-back-btn="true">
     <h1> 오시는길</h1>
