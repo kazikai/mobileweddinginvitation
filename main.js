@@ -1,11 +1,4 @@
 (function($, window, document, undefined){
-// Bind the swipeHandler callback function to the swipe event on div.box
-$( ".text-header" ).css({
-  "margin": "0 0",
-  "font-size": "1.2em"
-});
-$( ".text-center" ).css( "text-align", "center" );
-
 var initLocation = function() {
   var map = new Tmap.Map({
     div:"map1",
@@ -79,30 +72,12 @@ $( document ).on( "pagechange",  function(){
   var $slider = $( "#slider" ),
       $prev = $( "#prevButton" ),
       $next = $( "#nextButton" );
-  /*
-  $slider.off( "swipeleft" ).on( "swipeleft", function(e) {
-    e.preventDefault();
-    var index = mySwipe.getPos();
-    console.log( "left: " + index );
-    mySwipe.slide( index, 500 );
-    e.stopPropagation();
-  });
-  $slider.off( "swiperight" ).on( "swiperight", function(e) {
-    e.preventDefault();
-    var index = mySwipe.getPos();
-    console.log( "right: " + index );
-    mySwipe.slide( index, 500 );
-    e.stopPropagation();
-  });
-  */
   $prev.off( "click" ).on( "click", function(){
     mySwipe.prev();
   });
   $next.off( "click" ).on( "click", function(){
     mySwipe.next();
   });
-
-
   // tmap initialize
   var $page = $( ".ui-page-active" );
   $( ".tmMap" ).empty();
