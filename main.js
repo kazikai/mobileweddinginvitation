@@ -1,4 +1,10 @@
 (function($, window, document, undefined){
+// Bind the swipeHandler callback function to the swipe event on div.box
+$( ".text-header" ).css({
+  "margin": "0 0",
+  "font-size": "1.2em"
+});
+$( ".text-center" ).css( "text-align", "center" );
 var initLocation = function() {
   var map = new Tmap.Map({
     div:"map1",
