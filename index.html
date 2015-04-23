@@ -28,7 +28,7 @@
 
 <!--첫번째 메인 페이지 -->
 <div data-role="page" id="main">
-  <div data-role="header" data-position="fixed">
+  <div data-role="header" data-position="fixed" >
     <a href="#panel1" class="ui-btn ui-btn-left ui-alt-icon ui-nodisc-icon ui-corner-all ui-btn-icon-notext ui-icon-bars" style="font-size: 20px;"></a>
     <h1 class="text-header"> 한철수 <b style="color:red">❤</b> 김영희 의 결혼식</h1>
   </div>
@@ -36,7 +36,7 @@
     <div>
       <img class="main-img" src="img/main.png">
     </div>
-    <a href="#notice" data-rel="popup" class="ui-btn ui-corner-all ui-btn-b" data-transition="pop" >공지 사항</a>
+    <a href="#notice" data-rel="popup" data-role="button" class="ui-btn ui-corner-all ui-btn-b" data-transition="pop" data-position-to="window">공지 사항</a>
     <ul data-role="listview" data-inset="true">
       <li data-role="list-divider">인사말</li>
       <li class="text-header text-center">
@@ -74,21 +74,23 @@
         <p>xx-xxxx-xxxx</p>
       </a>
     </li>
-    <li data-role="list-divider">연락 하기 </li>
-    <li>
-      <div>
-      <!--한철수, 김영희  수정 url=http://주소  수정 필요 -->
-      <a href="javascript:;" id="kakao-link"><img class="kakaolink" src="./img/kakao_talk.png" width="100%" alt="카카오 톡으로 청첩장 보내기"></a>
-      </div>
-    </li>
     <li data-role="list-divider">드리는 말씀</li>
     <li class="text-center">
       <p>주차장은 웨딩홀 옆에 있으니 </p>
       <p>주차요원의 안내에 따라<b style="color:blue">부탁드립니다.</b></p>
     </li>
     </ul>
+    <div class="ui-corner-all custom-corners">
+      <div class="ui-bar ui-bar-a">
+        <h3>주변에 알리기</h3>
+      </div>
+      <div class="ui-body ui-body-a"  style="overflow:visible;">
+        <div><a href="javascript:;" id="kakao-link"><img class="kakaolink" src="./img/kakao_talk.png" width="100%" alt="카카오 톡으로 청첩장 보내기"></a></div>
+        <div class="fb-like" data-share="true" data-width="450" data-show-faces="true"></div>
+
+      </div>
+    </div>
     <div class="ui-body ui-body-a ui-corner-all" style="overflow:visible;">
-      <div class="fb-like" data-share="true" data-width="450" data-show-faces="true"></div>
     </div>
   </div>
   <div data-role="footer" data-position="fixed">

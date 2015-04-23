@@ -93,5 +93,6 @@ $( document ).on( "pagechange",  function(){
     initBanquet();
   }
   initKakao();
+  $( "#notice" ).popup( "open" );
 });
 })(jQuery, window, document);
