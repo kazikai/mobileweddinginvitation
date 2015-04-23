@@ -39,8 +39,27 @@ var initBanquet = function( ){
   var offset = new Tmap.Pixel(-(size.w/2), -(size.h/2));
   var icon = new Tmap.Icon('./img/marker.png', size, offset);
   var marker = new Tmap.Marker(lonlat, icon);
-
-markerLayer.addMarker(marker);
+  markerLayer.addMarker(marker);
+};
+var initKakao = function(){
+    /* kakao톡 링크 */
+  Kakao.cleanup();
+  // 사용할 앱의 Javascript 키를 설정해 주세요.
+  Kakao.init('abeaf346736c57a8ba07ef2dcfcad028');
+  // 카카오톡 링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
+  Kakao.Link.createTalkLinkButton({
+    container: '#kakao-link',
+    label: '저희의 결혼을 축하해주세요',
+    image: {
+      src: 'http://dev.kazikai.net/invitation/img/main.png',
+      width: '300',
+      height: '200'
+    },
+    webButton: {
+      text: '청첩장 바로가기',
+      url: 'http://dev.kazikai.net/invitation/index.html' // 앱 설정의 웹 플랫폼에 등록한 도메인의 URL이어야 합니다.
+    }
+  });
 };
 
 
@@ -92,23 +111,6 @@ $( document ).on( "pagechange",  function(){
   } else {
     initBanquet();
   }
-
-  /* kakao톡 링크 */
-  // 사용할 앱의 Javascript 키를 설정해 주세요.
-  Kakao.init('abeaf346736c57a8ba07ef2dcfcad028');
-  // 카카오톡 링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
-  Kakao.Link.createTalkLinkButton({
-    container: '#kakao-link',
-    label: '저희의 결혼을 축하해주세요',
-    image: {
-      src: 'http://dev.kazikai.net/invitation/img/main.png',
-      width: '300',
-      height: '200'
-    },
-    webButton: {
-      text: '청첩장 바로가기',
-      url: 'http://dev.kazikai.net/invitation/index.html' // 앱 설정의 웹 플랫폼에 등록한 도메인의 URL이어야 합니다.
-    }
-  });
+  initKakao();
 });
 })(jQuery, window, document);
