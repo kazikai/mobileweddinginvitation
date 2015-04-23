@@ -10,13 +10,21 @@
 <body>
 
 <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/ko_KR/all.js#xfbml=1&appId=526052514182685";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '526052514182685',
+      xfbml      : true,
+      version    : 'v2.3'
+    });
+  };
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
 </script>
 
 <!--첫번째 메인 페이지 -->
@@ -79,11 +87,10 @@
       <p>주차장은 웨딩홀 옆에 있으니 </p>
       <p>주차요원의 안내에 따라<b style="color:blue">부탁드립니다.</b></p>
     </li>
-    <!--<li><a href="#hsh">방명록</a></li>
-    <li><a href="#lhy">신부 방명록</a></li>-->
+    <li><a href="#hsh">방명록</a></li>
+    <!--<li><a href="#lhy">신부 방명록</a></li>-->
     </ul>
   </div>
-
   <div data-role="footer" data-position="fixed">
     <h1> xxxx년 xx월 xx일 행복한 웨딩홀 xx시 </h1>
   </div>
@@ -114,7 +121,8 @@
 </div>
 <!--첫번재 메인 페이지 끝-->
 
-<!--두번째 사진 페이지 -->
+
+<!--사진 페이지-->
 <div data-role="page" id="page1">
   <!--<div class="box"></div>-->
   <div data-role="header" data-position="fixed" data-add-back-btn="true" >
@@ -140,10 +148,10 @@
     <h1> xxxx년 xx월 xx일 행복한 웨딩홀 xx시 </h1>
   </div>
 </div>
+<!--사진 페이지 끝-->
 
-<!--세번째 사진 페이지 -->
+<!--사진( 슬라이드 없이 ) 페이지-->
 <div data-role="page" id="page2">
-  <!--<div class="box"></div>-->
   <div data-role="header" data-position="fixed" data-add-back-btn="true" >
     <h1> 사진첩(슬라이드 없이) </h1>
   </div>
@@ -163,9 +171,10 @@
     <h1> xxxx년 xx월 xx일 행복한 웨딩홀 xx시 </h1>
   </div>
 </div>
+<!--사진( 슬라이드 없이 ) 페이지 끝-->
 
 
-
+<!--프로포즈 페이지 -->
 <div data-role="page" id="propose">
   <div data-role="header" data-position="fixed" data-add-back-btn="true">
     <h1> 프로포즈는? </h1>
@@ -194,7 +203,7 @@
       <p>페이스북 아이디로 로그인 해서 방명록을 남기실수있습니다.</p>
       <p>프로필에 게시하기를 체크 하시면, 로그인하신 페이스북 아이디로 포스팅이 됩니다.</p>
   </div>
-<div class="fb-comments" data-href="https://www.facebook.com/kazikai" data-width="320px" data-numposts="5" data-colorscheme="light"></div>
+  <div class="fb-like" data-share="true" data-width="450" data-show-faces="true"></div>
   </div>
   <div data-role="footer" data-position="fixed">
     <h1> xxxx년 xx월 xx일 행복한 웨딩홀 xx시 </h1>
@@ -234,12 +243,11 @@
     <h1> xxxx년 xx월 xx일 행복한 웨딩홀 xx시 </h1>
   </div>
 </div>
-
-  <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
-  <script src="jquery.mobile-1.4.0.js"></script>
-  <script src="https://apis.skplanetx.com/tmap/js?version=1&format=javascript&appKey=59d44673-37a8-3d41-a7b6-6ca3c6ea061f"></script>
-  <script src="swipe.js"></script>
-  <script src="kakao.min.js"></script>
-  <script src="main.js"></script>
+<script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="jquery.mobile-1.4.0.js"></script>
+<script src="https://apis.skplanetx.com/tmap/js?version=1&format=javascript&appKey=59d44673-37a8-3d41-a7b6-6ca3c6ea061f"></script>
+<script src="swipe.js"></script>
+<script src="kakao.min.js"></script>
+<script src="main.js"></script>
 </body>
 </html>
