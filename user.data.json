@@ -1,0 +1,23 @@
+{
+  "user": {
+    "groom": "한철수",
+    "brider": "김영희"
+  },
+  "greetings":[
+    {
+      "message": "날씨 좋은 화창한 날에"
+    },{
+      "message": "저희 두 사람이 드디어 결혼을 하게 됩니다."
+    },{
+      "message": "새로운 인생을 시작하는 기쁜날"
+    },{
+      "message": "오셔서 축복해주세요"
+    }
+  ],
+  "groomFamilyInfo":[
+    {
+      "father": "한석봉",
+      "mother": "이연수"
+    }
+  ]
+}
