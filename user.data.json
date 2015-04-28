@@ -3,6 +3,12 @@
     "groom": "한철수",
     "brider": "김영희"
   },
+  "image": {
+    "main": "main.png"
+  },
+  "notice":{
+    "message": "화환은 정중히 사양합니다."
+  },
   "greetings":[
     {
       "message": "날씨 좋은 화창한 날에"
