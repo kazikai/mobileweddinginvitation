@@ -1,0 +1,17 @@
+{
+  "name": "invitation",
+  "version": "0.0.1",
+  "private": true,
+  "devDependencies": {
+    "grunt": "^0.4.3",
+    "load-grunt-tasks": "^0.4.0",
+    "grunt-contrib-jshint": "^0.8.0",
+    "assemble": "^0.4.36",
+    "grunt-contrib-watch": "^0.5.3",
+    "grunt-contrib-connect": "^0.7.1",
+    "grunt-contrib-uglify": "^0.4.0",
+    "grunt-contrib-cssmin": "^0.9.0",
+    "grunt-usemin": "^2.0.2"
+  },
+  "dependencies": {}
+}

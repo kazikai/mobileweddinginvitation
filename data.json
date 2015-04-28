@@ -4,7 +4,13 @@
     "brider": "김영희"
   },
   "image": {
-    "main": "main.png"
+    "main": "main.png",
+    "propose": [
+      "propose1.png",
+      "propose2.png"
+    ],
+    "album1":[
+    ]
   },
   "notice":{
     "message": "화환은 정중히 사양합니다."
