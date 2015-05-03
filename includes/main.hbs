@@ -6,51 +6,54 @@
   </div>
   <div data-role="content">
     <div>
-      <img class="main-img" src="img/main.png">
+      <img class="main-img" src="img/{{image.main}}">
     </div>
     <a href="#notice" id="notice-popup" data-rel="popup" data-role="button" class="ui-btn ui-corner-all ui-btn-b" data-transition="pop" data-position-to="window">공지 사항</a>
     <ul data-role="listview" data-inset="true">
       <li data-role="list-divider">인사말</li>
       <li class="text-header text-center">
-          <p>날씨 좋은 화창할 날에 </p>
-          <p>저희 두사람이 드디어 결혼을 하게 됩니다. </p>
-          <p>새로운 인생을 시작하는 기쁜날</p>
-          <p>오셔서 축복해주세요. </p>
+          {{#each greetings}}
+          <p>{{message}}</p>
+          {{/each}}
       </li>
       <li data-role="list-divider">신랑 신부 가족 & 이름 </li>
+      {{#with family}}
       <li>
-          <p>신랑 아버지와 어머니 성함 </p>
-          <p>의 차남 한철수 </p>
+        {{#each groom}}
+        <p>{{this}}</p>
+        {{/each}}
       </li>
       <li>
-          <p>신부 아버지와 어머니 성함</p>
-          <p>의 차녀 김영희 </p>
+        {{#each brider}}
+        <p>{{this}}</p>
+        {{/each}}
       </li>
-    <li data-role="list-divider">프로포즈</li>
-    <li><a href="#propose">프로포즈</a></li>
-    <li data-role="list-divider">사진첩</li>
-    <li><a href="#page1">사진첩</a></li>
-    <li><a href="#page2">사진첩(슬라이드없이)</a></li>
-    <li data-role="list-divider">오시는길</li>
-    <li>
-      <a href="#location" >
-        <img src="img/wedding.png" style="height:100%">
-        <h2>행복한 웨딩홀 (예식장)</h2>
-        <p>xx-xxxx-xxxx</p>
-      </a>
-    </li>
-    <li>
-      <a href="#location2">
-        <img src="img/buffet.png"  style="height:100%">
-        <h2>맛있는 식당 (피로연장)</h2>
-        <p>xx-xxxx-xxxx</p>
-      </a>
-    </li>
-    <li data-role="list-divider">드리는 말씀</li>
-    <li class="text-center">
-      <p>주차장은 웨딩홀 옆에 있으니 </p>
-      <p>주차요원의 안내에 따라<b style="color:blue">부탁드립니다.</b></p>
-    </li>
+      {{/with}}
+      <li data-role="list-divider">프로포즈</li>
+      <li><a href="#propose">프로포즈</a></li>
+      <li data-role="list-divider">사진첩</li>
+      <li><a href="#page1">사진첩</a></li>
+      <li><a href="#page2">사진첩(슬라이드없이)</a></li>
+      <li data-role="list-divider">오시는길</li>
+      <li>
+        <a href="#location" >
+          <img src="img/wedding.png" style="height:100%">
+          <h2>행복한 웨딩홀 (예식장)</h2>
+          <p>xx-xxxx-xxxx</p>
+        </a>
+      </li>
+      <li>
+        <a href="#location2">
+          <img src="img/buffet.png"  style="height:100%">
+          <h2>맛있는 식당 (피로연장)</h2>
+          <p>xx-xxxx-xxxx</p>
+        </a>
+      </li>
+      <li data-role="list-divider">드리는 말씀</li>
+      <li class="text-center">
+        <p>주차장은 웨딩홀 옆에 있으니 </p>
+        <p>주차요원의 안내에 따라<b style="color:blue">부탁드립니다.</b></p>
+      </li>
     </ul>
     <div class="ui-corner-all custom-corners">
       <div class="ui-bar ui-bar-a">

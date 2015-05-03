@@ -37,14 +37,18 @@
     },{
       "message": "새로운 인생을 시작하는 기쁜날"
     },{
-      "message": "오셔서 축복해주세요"
+      "message": "오셔서 축복해주세요."
     }
   ],
-  "groomFamilyInfo":[
-    {
-      "father": "한석봉",
-      "mother": "이연수"
-    }
-  ],
+  "family":{
+    "groom":[
+      "한기수와 박진희",
+      "의 차남 한철수"
+    ],
+    "brider":[
+      "김수현과 이향희",
+      "의 차녀 김영희"
+    ]
+  },
   "footer": "xxxx년 xx월 xx일 행복한 웨딩홀 xx시"
 }
