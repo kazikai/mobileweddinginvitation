@@ -6,17 +6,12 @@
   <div data-role="content">
     <div>
       <div>
-        <div><img style="width: 100%;" src="./img/first.png"></div>
-        <div><img style="width: 100%;" src="./img/second.png"></div>
-        <div><img style="width: 100%;" src="./img/third.png"></div>
-        <div><img style="width: 100%;" src="./img/fourth.png"></div>
-        <div><img style="width: 100%;" src="./img/fifth.png"></div>
-        <div><img style="width: 100%;" src="./img/sixth.png"></div>
+        {{#each image.album2}}
+        <div><img style="width: 100%;" src="./img/{{this}}"></div>
+        {{/each}}
       </div>
     </div>
   </div>
-  <div data-role="footer" data-position="fixed">
-    <h1> xxxx년 xx월 xx일 행복한 웨딩홀 xx시 </h1>
-  </div>
+  {{>footer}}
 </div>
 <!--사진( 슬라이드 없이 ) 페이지 끝-->

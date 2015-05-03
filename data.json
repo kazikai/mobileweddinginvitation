@@ -10,6 +10,20 @@
       "propose2.png"
     ],
     "album1":[
+      "first.png",
+      "second.png",
+      "third.png",
+      "fourth.png",
+      "fifth.png",
+      "sixth.png"
+    ],
+    "album2":[
+      "first.png",
+      "second.png",
+      "third.png",
+      "fourth.png",
+      "fifth.png",
+      "sixth.png"
     ]
   },
   "notice":{
@@ -31,5 +45,6 @@
       "father": "한석봉",
       "mother": "이연수"
     }
-  ]
+  ],
+  "footer": "xxxx년 xx월 xx일 행복한 웨딩홀 xx시"
 }
