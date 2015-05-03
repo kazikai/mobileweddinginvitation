@@ -39,11 +39,8 @@
     <a href="#notice" data-rel="popup" data-role="button" class="ui-btn ui-corner-all ui-btn-b" data-transition="pop" data-position-to="window">공지 사항</a>
     <ul data-role="listview" data-inset="true">
       <li data-role="list-divider">인사말</li>
-      <li class="text-header text-center">
-          <p>날씨 좋은 화창할 날에 </p>
-          <p>저희 두사람이 드디어 결혼을 하게 됩니다. </p>
-          <p>새로운 인생을 시작하는 기쁜날</p>
-          <p>오셔서 축복해주세요. </p>
+      <li class="text-header text-center" id="regard">
+
       </li>
       <li data-role="list-divider">신랑 신부 가족 & 이름 </li>
       <li>
@@ -233,6 +230,12 @@
   </div>
 </div>
 <!--피로연장 지도 페이지 끝-->
+
+<script type="text/x-handlebars-template" id="regard-template">
+{{#each this}}
+  <p>{{content}}</p>
+{{/each}}
+</script>
 
 <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
 <script src="jquery.mobile-1.4.0.js"></script>
