@@ -20,7 +20,7 @@ module.exports = function( grunt ) {
       },
       build: {
         src: 'resources/js/main.js',
-        dest: 'resources/js/main.min.js'
+        dest: 'dist/resources/js/main.min.js'
       }
     },
     clean: ['dist/'],
@@ -30,6 +30,24 @@ module.exports = function( grunt ) {
           // makes all src relative to cwd
           {expand: true, cwd: 'resources/', src: ['**'], dest: 'dist/resources/'}
         ]
+      }
+    },
+    connect: {
+      server: {
+        options: {
+          port: 8080,
+          base: 'dist'
+        }
+      }
+    },
+    watch: {
+      options: {
+        interrupt: true,
+        livereload: true
+      },
+      newtech: {
+        files: ["includes/*.hbs", "layout/*.hbs", "resources/**/*.css", "resources/img/"],
+        tasks: ["build"]
       }
     },
     assemble: {
@@ -54,5 +72,5 @@ module.exports = function( grunt ) {
   });
   // Default task(s).
   grunt.registerTask( 'default', [ 'uglify' ]);
-  grunt.registerTask( 'build', [ 'clean', 'uglify', 'assemble:build', 'copy' ] );
+  grunt.registerTask( 'build', [ 'clean', 'assemble:build', 'copy', 'uglify', 'connect:server', 'watch'  ] );
 };
