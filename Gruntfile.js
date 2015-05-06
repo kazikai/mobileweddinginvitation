@@ -23,6 +23,15 @@ module.exports = function( grunt ) {
         dest: 'resources/js/main.min.js'
       }
     },
+    clean: ['dist/'],
+    copy: {
+      main: {
+        files: [
+          // makes all src relative to cwd
+          {expand: true, cwd: 'resources/', src: ['**'], dest: 'dist/resources/'}
+        ]
+      }
+    },
     assemble: {
       options: {
         helpers: [ 'helper/common.js' ]
@@ -45,5 +54,5 @@ module.exports = function( grunt ) {
   });
   // Default task(s).
   grunt.registerTask( 'default', [ 'uglify' ]);
-  grunt.registerTask( 'build', [ 'uglify', 'assemble:build' ] );
+  grunt.registerTask( 'build', [ 'clean', 'uglify', 'assemble:build', 'copy' ] );
 };
