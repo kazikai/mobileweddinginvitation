@@ -11,6 +11,7 @@ module.exports = function( grunt ) {
       options: {
         jshint: true
       },
+      cwd: 'resources/js',
       src: 'main.js'
     },
     uglify: {
@@ -18,8 +19,8 @@ module.exports = function( grunt ) {
         banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
       },
       build: {
-        src: 'main.js',
-        dest: 'main.min.js'
+        src: 'resources/js/main.js',
+        dest: 'resources/js/main.min.js'
       }
     },
     assemble: {
@@ -43,6 +44,6 @@ module.exports = function( grunt ) {
     }
   });
   // Default task(s).
-  grunt.registerTask('default', ['uglify']);
-  grunt.registerTask('build',['uglify', 'assemble:build'] );
+  grunt.registerTask( 'default', [ 'uglify' ]);
+  grunt.registerTask( 'build', [ 'uglify', 'assemble:build' ] );
 };
