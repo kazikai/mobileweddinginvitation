@@ -56,5 +56,9 @@
   "locaiton2":{
     "name" :""
   },
-  "footer": "xxxx년 xx월 xx일 행복한 웨딩홀 xx시"
+  "footer": "xxxx년 xx월 xx일 행복한 웨딩홀 xx시",
+  "application":{
+    "tmapAppKey": "59d44673-37a8-3d41-a7b6-6ca3c6ea061f",
+    "facebookAppId": "526052514182685"
+  }
 }

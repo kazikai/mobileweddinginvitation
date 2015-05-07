@@ -93,19 +93,5 @@ $( document ).on( "pagechange",  function(){
     initBanquet();
   }
   initKakao();
-  /* handlebars example*/
-  var regardData = [{
-    "content":"날씨 좋은 화창할 날에"
-  },{
-    "content":"저희 두사람이 드디어 결혼을 하게 됩니다."
-  },{
-    "content":"새로운 인생을 시작하는 기쁜날"
-  },{
-    "content":"오셔서 축복해주세요. "
-  }];
-  var $regard = $( "#regard" );
-  var regardTmpl = Handlebars.compile( $( "#regard-template" ).html() );
-  $regard.html( regardTmpl( regardData ) );
-
 });
 })(jQuery, window, document);
