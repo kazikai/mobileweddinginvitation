@@ -45,7 +45,7 @@ module.exports = function( grunt ) {
         interrupt: true,
         livereload: true
       },
-      newtech: {
+      project: {
         files: ["includes/*.hbs", "layout/*.hbs", "resources/**/*.css", "resources/img/"],
         tasks: ["build"]
       }
