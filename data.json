@@ -50,11 +50,17 @@
       "의 차녀 김영희"
     ]
   },
-  "location":{
-    "name": "행복한 웨딩홀( 예식장 )"
+  "location1":{
+    "name": "행복한 웨딩홀( 예식장 )",
+    "tel": "02-2222-2222",
+    "address": "서울시 강남구 압구정동 행복 28-1",
+    "comment": "하고 싶은 말을 적어주세요"
   },
-  "locaiton2":{
-    "name" :"ddd"
+  "location2":{
+    "name": "맛있는 식당( 피로연 )",
+    "tel": "02-2222-2221",
+    "address": "서울시 강남구 압구정동 행복 28-1",
+    "comment": "피로연장은 여기입니다."
   },
   "footer": "xxxx년 xx월 xx일 행복한 웨딩홀 xx시",
   "application":{
