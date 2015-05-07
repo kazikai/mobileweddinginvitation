@@ -87,7 +87,7 @@ $( document ).on( "pagechange",  function(){
   // tmap initialize
   var $page = $( ".ui-page-active" );
   $( ".tmMap" ).empty();
-  if ( $page.attr( "id" ) === "location" ){
+  if ( $page.attr( "id" ) === "location1" ){
     initLocation();
   } else {
     initBanquet();
