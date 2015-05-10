@@ -22,7 +22,6 @@ var initLocation = function() {
   var marker = new Tmap.Marker(lonlat, icon);
   markerLayer.addMarker(marker);
 };
-
 var initBanquet = function( ){
   var map = new Tmap.Map({
     div:"map2",
