@@ -46,7 +46,7 @@ module.exports = function( grunt ) {
         livereload: true
       },
       project: {
-        files: ["includes/*.hbs", "layout/*.hbs", "resources/**/*.css", "resources/img/"],
+        files: ["includes/*.hbs", "layout/*.hbs", "resources/**/*.css", "resources/img/", "resources/js/*"],
         tasks: ["build"]
       }
     },
@@ -72,5 +72,6 @@ module.exports = function( grunt ) {
   });
   // Default task(s).
   grunt.registerTask( 'default', [ 'uglify' ]);
-  grunt.registerTask( 'build', [ 'clean', 'assemble:build', 'copy', 'uglify', 'connect:server', 'watch'  ] );
+  grunt.registerTask( 'build', [ 'clean', 'assemble:build', 'copy', 'uglify'  ] );
+  grunt.registerTask( 'dev', [  'clean', 'assemble:build', 'copy', 'uglify', 'connect:server', 'watch' ] )
 };
