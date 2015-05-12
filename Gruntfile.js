@@ -71,7 +71,7 @@ module.exports = function( grunt ) {
     }
   });
   // Default task(s).
-  grunt.registerTask( 'default', [ 'uglify' ]);
+  grunt.registerTask( 'default', [ 'build' ]);
   grunt.registerTask( 'build', [ 'clean', 'assemble:build', 'copy', 'uglify'  ] );
-  grunt.registerTask( 'dev', [  'clean', 'assemble:build', 'copy', 'uglify', 'connect:server', 'watch' ] )
+  grunt.registerTask( 'dev', [  'build', 'connect:server', 'watch' ] )
 };
