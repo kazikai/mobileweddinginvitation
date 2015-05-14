@@ -65,7 +65,7 @@ module.exports = function( grunt ) {
           expand: true,
           cwd: 'docs',
           src: '*.hbs',
-          dest: 'dist/'
+          dest: 'dist'
         }]
       }
     }
