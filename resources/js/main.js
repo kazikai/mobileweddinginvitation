@@ -13,7 +13,7 @@ var initLocation = function() {
   });
   var markerLayer = new Tmap.Layer.Markers();
   map.addLayer( markerLayer );
-  var lonlat = new Tmap.LonLat( 14123054.321613, 4512207.674072 );
+  var lonlat = new Tmap.LonLat( 14127736.0000893, 4511715.2883089 );
   //var center = new Tmap.LonLat( 14123343.752289, 4512189.739492 );
   map.setCenter( lonlat, 16 );
   var size = new Tmap.Size(30,30);
@@ -49,13 +49,13 @@ var initKakao = function(){
     container: '#kakao-link',
     label: '저희의 결혼을 축하해주세요',
     image: {
-      src: 'http://dev.kazikai.net/invitation/img/main.png',
+      src: 'http://dev.kazikai.net/invitation/dist/resources/img/main.png',
       width: '300',
       height: '200'
     },
     webButton: {
       text: '청첩장 바로가기',
-      url: 'http://dev.kazikai.net/invitation/index.html' // 앱 설정의 웹 플랫폼에 등록한 도메인의 URL이어야 합니다.
+      url: 'http://dev.kazikai.net/invitation/dist/index.html' // 앱 설정의 웹 플랫폼에 등록한 도메인의 URL이어야 합니다.
     }
   });
 };
